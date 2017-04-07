@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.jularic.dominik.prvadomacazadaca.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/ll_main">
+
+            <TextView
+                android:id="@+id/tv_main_x_real"
+                android:text="@string/tv_main_x_real_text"
+                style="@style/tv_main" />
+            <EditText
+                android:id="@+id/et_main_x_real"
+                style="@style/et_main" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/ll_main">
+
+
+            <TextView
+                android:id="@+id/tv_main_x_imaginary"
+                android:text="X imaginarni dio:"
+                style="@style/tv_main"/>
+
+            <EditText
+                android:id="@+id/et_main_x_imaginary"
+                style="@style/et_main"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_main_operation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingTop="20dp"
+            android:text="Operacija: "
+
+            />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+            <RadioButton android:id="@+id/radio_operation_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" +"
+                android:layout_weight="1"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/radio_operation_substract"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" -"
+                android:layout_weight="1"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/radio_operation_multiply"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" *"
+                android:layout_weight="1"
+                android:onClick="onRadioButtonClicked"/>
+            <RadioButton android:id="@+id/radio_operation_divide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" /"
+                android:layout_weight="1"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+
+        <LinearLayout
+            style="@style/ll_main">
+
+
+            <TextView
+                android:id="@+id/tv_main_y_real"
+                android:text="Y realni dio:"
+                style="@style/tv_main"/>
+            <EditText
+                android:id="@+id/et_main_y_real"
+                style="@style/et_main"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/ll_main">
+
+            <TextView
+                android:id="@+id/tv_main_y_imaginary"
+                android:text="Y imaginarni dio:"
+                style="@style/tv_main"/>
+            <EditText
+                android:id="@+id/et_main_y_imaginary"
+                style="@style/et_main"/>
+
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/btn_main_calculate"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Grafički prikaz"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+</ScrollView>

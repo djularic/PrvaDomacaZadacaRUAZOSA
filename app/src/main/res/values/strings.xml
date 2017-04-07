@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PrvaDomacaZadaca</string>
+    <string name="et_max_length">10</string>
+    <string name="tv_main_x_real_text">X realni dio:</string>
+</resources>
